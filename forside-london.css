@@ -1,0 +1,62 @@
+
+
+html, body {
+    margin: 0; /* Fjerner standard margin */
+    padding: 0; /* Fjerner standard padding */
+    width: 100%; /* Setter bredden til 100% */
+    height: 100%; /* Setter høyden til 100% */
+    background-color: white;
+    overflow-x: hidden; /* Forhindrer horisontal rulling */
+}
+
+#nav {
+    width: 100%; /* Setter bredden på navigasjonsbaren til 100% av skjermbredden */
+    padding: 10px; /* Gir litt innvendig avstand (padding) på 10px rundt innholdet i navigasjonsbaren */
+    text-decoration: none;
+    background-color: #003366;
+    color: white;
+    display: flex; /* Bruker flexbox for layout */
+    justify-content: space-between; /* Sprer innholdet jevnt utover */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+}
+
+.knapper {
+    text-decoration: none; /* Fjerner understrekingen på lenkene */
+    color:  white; /* Bestemmer at lenkene skal ha svart farge */
+    padding: 20px; /* Gir innvendig avstand (padding) på 10px rundt lenkene, noe som gjør dem større og mer klikkbare */
+}
+
+.knapper:hover {
+    background-color: #003153;
+}
+
+.logo {
+    font-size: 36px; /* Størrelse på logoen */
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+#topp {
+    position: relative; /* Setter posisjon til relativ for å kontrollere bildets plassering */
+    overflow: hidden; /* Skjuler eventuelt overflødig innhold */
+    width: 100%; /* Setter bredden til 100% */
+}
+
+#bilde img {
+    width: 100%; /* Gjør bildet så bredt som mulig */
+    height: auto; /* Beholder bildeforholdet */
+    display: block; /* Fjerner mellomrom under bildet */
+}
+
+
+
+#topp h1 {
+    position: absolute; /* Plasserer overskriften over bildet */
+    top: 50%; /* Juster dette for å flytte overskriften opp eller ned */
+    left: 50%; /* Juster dette for å flytte overskriften til venstre eller høyre */
+    transform: translate(-50%, -50%); /* Sentrerer overskriften både horisontalt og vertikalt */
+    color: white; /* Farge på overskriften */
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
